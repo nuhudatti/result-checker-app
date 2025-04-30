@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Check Result - IBBUL Student Portal</title>
+  <link rel="stylesheet" href="css/result.css">
+</head>
+<body class="home-page">
+
+  <!-- Background -->
+  <div class="background-overlay"></div>
+
+  <!-- Header Section -->
+  <div class="result-container">
+    <img src="img/deptlogo.jpg" alt="IBBUL Department Logo" class="logo">
+    <h1>Computer Science</h1>
+    <p><i>Enter your matric number to view your result</i></p>
+  </div>
+
+  <!-- Form Section -->
+  <section class="input-section">
+    <input type="text" id="matricNumber" placeholder="Enter Matric Number" required>
+    <button type="button" id="checkBtn">Check Result</button>
+    <div class="datetime" id="datetime"></div>
+    <div class="error-message" id="errorMessage"></div>
+  </section>
+
+  <!-- Result Table Section -->
+  <section class="result-table" id="result-table">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Semester</th>
+          <th>GST301</th>
+          <th>MTH309</th>
+          <th>CSC301</th>
+          <th>CSC303</th>
+          <th>CSC305</th>
+          <th>CSC307</th>
+          <th>CSC309</th>
+          <th>CSC311</th>
+          <th>GPA</th>
+        </tr>
+      </thead>
+      <tbody id="resultBody">
+        <tr>
+          <td>Nuhu Muhammad Datti</td>
+          <td>1</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>A</td>
+          <td>5.00</td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="disclaimer">
+      Disclaimer: This result is a provisional notification. Contact the Registry for an official transcript.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © IBBUL || 5IRE Team.
+    <!-- © Ibrahim Badamasi Babangida University Lapai. <br> Developed by 5IRE Team. -->
+    <!-- © IBBUL || Developed by 5IRE Team. -->
+  </footer>
+
+  <script src="js/result.js"></script>
+</body>
+</html>
